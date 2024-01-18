@@ -1763,7 +1763,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 73px 50px 0;
+  padding: 0 50px 0;
   position: relative;
 }
 
@@ -2156,7 +2156,6 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  margin-top: 50px;
 }
 
 .contact__container {
@@ -2489,6 +2488,10 @@ h3 {
     margin-top: 30px;
   }
 
+  .contact {
+    margin-top: 50px;
+  }
+
   .contact__cyber-man {
     width: 750px;
   }
@@ -2641,6 +2644,10 @@ h3 {
 
   .hero__wrapper {
     margin: 300px 0 0 0;
+  }
+
+  .offers {
+    height: auto;
   }
 
   .offers__list-item {

@@ -5,9 +5,11 @@ function preloader() {
         const preloader = document.getElementById("preloader");
         if (!preloader.classList.contains("done")) {
           preloader.classList.add("done");
+
         }
-      }, 2000);
+      }, 500);
     };
+
   } catch {
     console.error();
   }
@@ -87,34 +89,31 @@ function accordionFaq(){
  const questionItems = document.querySelectorAll('.faq__item-question');
  questionItems.forEach(function (item) {
   item.addEventListener('click', function () {
-    // Перевіряємо, чи елемент вже має клас 'active'
+
     var isActive = item.classList.contains('active');
 
-    // Видаляємо клас .active у всіх елементів .faq__item-question
+
     questionItems.forEach(function (faqItem) {
       faqItem.classList.remove('active');
     });
 
-    // Додаємо або видаляємо клас .active відповідно до значення isActive
+
     item.classList.toggle('active', !isActive);
 
-    // Знаходимо наступний елемент .answer для поточного .faq__item-question
     var nextAnswer = item.querySelector('.answer');
 
-    // Знаходимо наступний елемент .dot для поточного .faq__item-question
+
     var nextDot = item.querySelector('.dot');
 
-    // Видаляємо клас .active у всіх елементів .answer та .dot
     document.querySelectorAll('.answer, .dot').forEach(function (element) {
       element.classList.remove('active');
     });
 
-    // Додаємо клас .active до наступного елемента .answer
+
     if (nextAnswer && !isActive) {
       nextAnswer.classList.add('active');
     }
 
-    // Додаємо клас .active до наступного елемента .dot
     if (nextDot && !isActive) {
       nextDot.classList.add('active');
     }
@@ -123,7 +122,7 @@ function accordionFaq(){
 }
 
 function changeLanguage(element) {
-  // Зніміть активний клас з усіх елементів, окрім клікнутого
+
   try {
     const languageItems = document.querySelectorAll('.switcher-language__item');
     languageItems.forEach(function (item) {
@@ -249,4 +248,5 @@ year();
 menuLink();
 accordionFaq();
 changeLanguage();
+
 
