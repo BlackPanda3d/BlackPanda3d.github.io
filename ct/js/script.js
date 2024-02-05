@@ -429,7 +429,7 @@ const animation = () => {
     const form = document.querySelector('.box');
     const manager = document.querySelector('.contact__cyber-man');
 
-
+    const isMobile = window.innerWidth < 768;
 
 
 
@@ -488,14 +488,14 @@ const animation = () => {
         },
         1
       );
-
-      const tlAbout = gsap.timeline({
+      if (!isMobile) {
+    const tlAbout = gsap.timeline({
         scrollTrigger: {
           trigger: offersSection,
-          // start: "top center", 
+          start: "top center", 
           // debounce: 0.5, // Додайте цей рядок
         }
-      });
+    });
 
 
     gsap.from(arrowRight, {
@@ -544,7 +544,7 @@ const animation = () => {
     const tlBenefits = gsap.timeline({
       scrollTrigger: {
         trigger: sectionBenefit, 
-        // start: "top center", 
+        start: "top center", 
         // debounce: 0.5, // Додайте цей рядок
         // scrub: true,
       }
@@ -561,7 +561,7 @@ const animation = () => {
     const tlFaq =gsap.timeline({
       scrollTrigger:{
         trigger: sectionFaq,
-        // start: "top center",
+        start: "top center",
         // debounce: 0.5,   
       }
     })
@@ -601,13 +601,13 @@ const animation = () => {
       duration: 0.5,
       ease: "bounce.out",
     })
-
+  }
   } catch {}
 };
 
 
 
-// cursor();
+cursor();
 translator();
 validationForm();
 preloader();
