@@ -32,6 +32,7 @@
   border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: none !important;
 }
 
 html,
@@ -47,13 +48,14 @@ body {
   background: -o-linear-gradient(359deg, rgba(60, 84, 237, 0.45) 0.71%, rgba(129, 67, 189, 0.3) 99.15%), -o-linear-gradient(top, #181433 0%, #1D2553 47.92%, #2C143A 100%);
   background: linear-gradient(91deg, rgba(60, 84, 237, 0.45) 0.71%, rgba(129, 67, 189, 0.3) 99.15%), linear-gradient(180deg, #181433 0%, #1D2553 47.92%, #2C143A 100%);
   background-size: 400% 400%;
+  background-size: 400% 400%;
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
   color: #FFFFFF;
   font-family: "Unbounded";
-  -webkit-animation: gradient 4s infinite;
-          animation: gradient 4s infinite;
+  -webkit-animation: gradient 4s ease infinite;
+          animation: gradient 4s ease infinite;
   font-size: 14px;
   z-index: 1;
   overflow-x: hidden;
@@ -821,8 +823,32 @@ main {
   }
 }
 
+@-webkit-keyframes runningText {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes runningText {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
 .header {
-  padding: 33px 20px 0 20px;
+  padding: 10px 20px 10px 20px;
   background-color: transparent;
   width: 100%;
   display: -webkit-box;
@@ -834,7 +860,13 @@ main {
   min-height: 60px;
   background-color: transparent;
   position: fixed;
-  z-index: 2;
+  background: rgba(0, 208, 255, 0.38);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(8, 220, 182, 0.38);
+  z-index: 30;
 }
 
 .header__container {
@@ -879,7 +911,6 @@ main {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
-  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -927,7 +958,6 @@ main {
 .switcher-language__item {
   font-family: "Wallpoet";
   font-size: 20px;
-  cursor: pointer;
 }
 
 .switcher-language__item.active {
@@ -963,7 +993,6 @@ main {
   background-color: transparent;
   width: 40px;
   height: 30px;
-  cursor: pointer;
 }
 
 .burger-icon {
@@ -978,7 +1007,6 @@ main {
   -webkit-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   -o-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  cursor: pointer;
 }
 
 .burger-icon:before {
@@ -1042,6 +1070,24 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url("./../images/bg-hero-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(0, 0, 0)), color-stop(28%, rgba(253, 48, 45, 0)));
+  background: -o-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgba(253, 48, 45, 0) 28%);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(253, 48, 45, 0) 28%);
+  background: -o-linear-gradient(86deg, rgb(0, 0, 0) 0%, rgba(253, 187, 45, 0) 100%);
+  background: linear-gradient(4deg, rgb(0, 0, 0) 0%, rgba(253, 187, 45, 0) 100%);
+  z-index: 0;
 }
 
 .hero__container {
@@ -1244,7 +1290,7 @@ main {
   margin: 18px 0 0 18px;
   color: #fff;
   font-family: "Unbounded";
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1258,19 +1304,77 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(108, 16, 102, 0)));
   background: -o-linear-gradient(top, rgb(0, 0, 0) 0%, rgba(108, 16, 102, 0) 100%);
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(108, 16, 102, 0) 100%);
-  padding: 73px 20px 0 20px;
+  padding: 0 0 0 0;
   position: relative;
+}
+
+.offers__blue-line {
+  position: absolute;
+  width: 100%;
+  height: 116px;
+  overflow: hidden;
+  color: #ff5500;
+  background: rgba(0, 208, 255, 0.38);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(8, 220, 182, 0.38);
+  -webkit-transform: rotate(-4.159deg) skew(-3deg);
+      -ms-transform: rotate(-4.159deg) skew(-3deg);
+          transform: rotate(-4.159deg) skew(-3deg);
+  position: relative;
+  top: -85px;
+  z-index: 20;
+}
+
+.offers__blue-line_text {
+  position: absolute;
+  margin: 15px 0;
+  padding: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 74px;
+  color: #00FFF0;
+  text-transform: uppercase;
+  font-family: "Wallpoet";
+  -webkit-animation: runningText 20s linear infinite;
+          animation: runningText 20s linear infinite;
+}
+
+.offers__lime-line {
+  width: 100%;
+  height: 116px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(0, 208, 255, 0.38);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(8, 220, 182, 0.38);
+  -webkit-transform: rotate(3.841deg) skew(4deg);
+  position: relative;
+  top: 10px;
+  z-index: 10;
 }
 
 .offers__container {
   position: relative;
   max-width: 1440px;
+  margin: 0 auto;
   height: 879px;
   width: 100%;
 }
@@ -1312,6 +1416,10 @@ main {
   font-weight: 400;
   line-height: 1.5;
   font-family: Unbounded;
+}
+
+.offers__list-item-text {
+  width: 345px;
 }
 
 .offers__background {
@@ -1450,7 +1558,6 @@ main {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
-  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1492,6 +1599,7 @@ main {
   max-width: 200px;
   width: 100%;
   position: absolute;
+  top: 60px;
 }
 
 .offers__arrow-right img {
@@ -1602,7 +1710,6 @@ main {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
-  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1856,7 +1963,7 @@ main {
   width: 100%;
   border-radius: 20px;
   min-height: 141px;
-  padding: 41px 62px 41px 26px;
+  padding: 22px 15px 23px 36px;
   position: relative;
 }
 
@@ -1941,6 +2048,11 @@ main {
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.benefits__text-block {
+  line-height: 1.5;
+  font-size: 15px;
 }
 
 .partners {
@@ -2055,7 +2167,6 @@ main {
 .scroll-item:hover {
   -webkit-box-shadow: 0 0 5px #00FFF0, 0 0 5px #00FFF0, 0 0 5px #00FFF0;
           box-shadow: 0 0 5px #00FFF0, 0 0 5px #00FFF0, 0 0 5px #00FFF0;
-  cursor: pointer;
 }
 
 .faq {
@@ -2118,7 +2229,7 @@ main {
 
 .faq__item-question {
   width: 100%;
-  padding: 10px 12px;
+  padding: 10px 9px;
   background: transparent;
   border: 2px solid #00FFF0;
   -webkit-box-shadow: 6px 8px 1.5px 0 #FA00FF;
@@ -2126,7 +2237,6 @@ main {
   border-radius: 3px;
   overflow: hidden;
   color: #00FFF0;
-  cursor: pointer;
 }
 
 .faq__cyber-boy {
@@ -2201,17 +2311,78 @@ main {
           box-shadow: 0 0 5px #FA00FF, 0 0 5px #FA00FF, 0 0 5px #FA00FF;
 }
 
-.contact {
+.orange-line {
+  width: 100%;
+  height: 116px;
+  overflow: hidden;
+  color: #ff5500;
+  background: rgba(226, 3, 255, 0.38);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(217, 8, 220, 0.38);
+  -webkit-transform: rotate(-4.159deg) skew(-3deg);
+      -ms-transform: rotate(-4.159deg) skew(-3deg);
+          transform: rotate(-4.159deg) skew(-3deg);
+  position: relative;
+  top: -116px;
+  z-index: 20;
+}
+
+.orange-line__text {
+  position: absolute;
+  margin: 15px 0;
+  padding: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 74px;
+  color: #00FFF0;
+  text-transform: uppercase;
+  font-family: "Wallpoet";
+  -webkit-animation: runningText 20s linear infinite;
+          animation: runningText 20s linear infinite;
+}
+
+.lime-line {
+  width: 100%;
+  height: 116px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: rgba(226, 3, 255, 0.38);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(217, 8, 220, 0.38);
+  -webkit-transform: rotate(3.841deg) skew(4deg);
+  position: relative;
+  top: 5px;
+  z-index: 10;
+}
+
+.contact {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./../images/contact-bg.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../images/contact-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../images/contact-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact__container {
+  margin: 0 auto;
   position: relative;
   max-width: 1440px;
   width: 100%;
@@ -2318,14 +2489,12 @@ h3 {
   background: rgba(0, 0, 0, 0.8);
   max-width: 600px;
   width: 100%;
-  height: 420px;
   border-radius: 5px;
   padding: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.8);
-          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.8);
-  /* Positioning */
+  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
 }
 
 .input-box {
@@ -2389,7 +2558,6 @@ h3 {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
-  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2426,6 +2594,33 @@ h3 {
   top: 2px;
   -webkit-filter: blur(2px);
           filter: blur(2px);
+}
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #FA00FF;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #FA00FF;
+  -webkit-box-shadow: 0 0 10px #FA00FF;
+          box-shadow: 0 0 10px #FA00FF;
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 99;
+  pointer-events: none;
 }
 
 @media (max-width: 1600px) {
@@ -2751,3 +2946,11 @@ h3 {
     top: 7px;
   }
 }
+
+.webp .hero{ background-image: url(./../images/bg-hero-2.webp); }
+
+.webp .contact{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./../images/contact-bg.webp); }
+
+.webp .contact{ background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/contact-bg.webp); }
+
+.webp .contact{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/contact-bg.webp); }
