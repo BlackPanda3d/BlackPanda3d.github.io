@@ -322,47 +322,47 @@ function validationForm() {
         rule: "maxLength",
         value: 15,
       },
+    ])
+    .addField(document.querySelector("#lastname"), [
+      {
+        rule: "required",
+        errorMessage: "Invalid this field is empty",
+      },
+      {
+        rule: "minLength",
+        value: 3,
+      },
+      {
+        rule: "maxLength",
+        value: 15,
+      },
+    ])
+    .addField(document.querySelector("#email"), [
+      {
+        rule: "required",
+        errorMessage: "Invalid email example email@gmail.com",
+      },
+      {
+        rule: "email",
+      },
+    ])
+    .addField(document.querySelector("input[type='tel"), [
+      {
+        rule: "required",
+        errorMessage: "Invalid this field is empty",
+      },
+      {
+        rule: "integer",
+      },
+      {
+        rule: 'minNumber',
+        value: 5,
+      },
+      {
+        rule: 'maxNumber',
+        value: 100,
+      },
     ]);
-    // .addField(document.querySelector("#lastname"), [
-    //   {
-    //     rule: "required",
-    //     errorMessage: "Invalid this field is empty",
-    //   },
-    //   {
-    //     rule: "minLength",
-    //     value: 3,
-    //   },
-    //   {
-    //     rule: "maxLength",
-    //     value: 15,
-    //   },
-    // ])
-    // .addField(document.querySelector("#email"), [
-    //   {
-    //     rule: "required",
-    //     errorMessage: "Invalid this field is empty",
-    //   },
-    //   {
-    //     rule: "email",
-    //   },
-    // ])
-    // .addField(document.querySelector("input[type='tel"), [
-    //   {
-    //     rule: "required",
-    //     errorMessage: "Invalid this field is empty",
-    //   },
-    //   {
-    //     rule: "integer",
-    //   },
-    //   {
-    //     rule: 'minNumber',
-    //     value: 5,
-    //   },
-    //   {
-    //     rule: 'maxNumber',
-    //     value: 100,
-    //   },
-    // ]);
   } catch {}
 }
 
@@ -604,7 +604,7 @@ const animation = () => {
 
 
 
-cursor();
+// cursor();
 translator();
 validationForm();
 preloader();
