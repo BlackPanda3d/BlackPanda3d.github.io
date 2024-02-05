@@ -492,8 +492,8 @@ const animation = () => {
       const tlAbout = gsap.timeline({
         scrollTrigger: {
           trigger: offersSection,
-          start: "top center", 
-          debounce: 0.5, // Додайте цей рядок
+          // start: "top center", 
+          // debounce: 0.5, // Додайте цей рядок
         }
       });
 
@@ -544,8 +544,8 @@ const animation = () => {
     const tlBenefits = gsap.timeline({
       scrollTrigger: {
         trigger: sectionBenefit, 
-        start: "top center", 
-        debounce: 0.5, // Додайте цей рядок
+        // start: "top center", 
+        // debounce: 0.5, // Додайте цей рядок
         // scrub: true,
       }
     });
@@ -561,8 +561,8 @@ const animation = () => {
     const tlFaq =gsap.timeline({
       scrollTrigger:{
         trigger: sectionFaq,
-        start: "top center",
-        debounce: 0.5,   
+        // start: "top center",
+        // debounce: 0.5,   
       }
     })
 
