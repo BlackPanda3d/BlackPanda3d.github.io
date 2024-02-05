@@ -2296,7 +2296,7 @@ main {
 }
 
 .dot {
-  width: 10px;
+  min-width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #00FFF0;
