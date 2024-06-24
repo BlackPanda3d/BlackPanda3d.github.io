@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,112 +13,121 @@
     <script type="module" src="./scripts/subscribe.js"></script>
     <title>NFT page</title>
 </head>
+
 <body>
     <div id="preloader" class="preloader">
         <span class="loader"></span>
-      </div>
+    </div>
     <div class="wrap">
         <header class="header">
             <div class="header__container">
-              <a href="index.html" class="header__logo">
-                <img src="./assets/icon/logo.png" alt="">
-                <h1 class="header__logo-text">NFT Marketplace</h1>
-              </a>
-              <nav class="navbar">
-                <ul class="navbar__items">
-                  <li id="item"><a href="./marketplace.html" key="firstItemNav" style="color: blueviolet;">Marketplace</a></li>
-                  <li id="item"><a href="./404.html" key="secondItemNav" >Rankings</a></li>
-                  <li id="item" ><a href="./wallet.html" key="thirdItemNav">Connect a wallet</a></li>
-                </ul>
-                <a href="./login.html" class="header__button_signup" key="join" id="signUpButton">
-                    <img src="./assets/icon/User.png" alt="user">
-                    Sign Up
+                <a href="index.html" class="header__logo">
+                    <img src="./assets/icon/logo.png" alt="">
+                    <h1 class="header__logo-text">NFT Marketplace</h1>
                 </a>
+                <nav class="navbar">
+                    <ul class="navbar__items">
+                        <li id="item"><a href="./marketplace.html" key="firstItemNav"
+                                style="color: blueviolet;">Marketplace</a></li>
+                        <li id="item"><a href="./404.html" key="secondItemNav">Rankings</a></li>
+                        <li id="item"><a href="./wallet.html" key="thirdItemNav">Connect a wallet</a></li>
+                    </ul>
+                    <a href="./login.html" class="header__button_signup" key="join" id="signUpButton">
+                        <img src="./assets/icon/User.png" alt="user">
+                        Sign Up
+                    </a>
 
-                <a href="./login.html" class="header__button_signin" id="signInButton" style="display:none;">
-                    <img src="./assets/icon/User.png" alt="user">
-                    Sign in
-                </a>
-              </nav>
-              <button class="burger__button">
-                <span class="burger-icon"></span>
-              </button>
-          
+                    <a href="./login.html" class="header__button_signin" id="signInButton" style="display:none;">
+                        <img src="./assets/icon/User.png" alt="user">
+                        Sign in
+                    </a>
+                </nav>
+                <button class="burger__button">
+                    <span class="burger-icon"></span>
+                </button>
+
             </div>
-          </header>
-          <main class="page">
+        </header>
+        <main class="page">
             <section class="poster">
                 <div class="poster__container">
                     <article class="poster__img">
                         <img src="./assets/bg-home.png" alt="">
                     </article>
-                    <article  class="poster__exposition">
+                    <article class="poster__exposition">
                         <div class="poster__description">
-                        <div class="poster__text">
-                            <h2 class="poster__title">
-                                
-                                The Orbitians
-                            </h2>
-                            <p class="poster__date">Minted on Sep 30, 2022</p>
-                        </div>
-                        <div class="poster__avtor">
-                            <h2 class="poster__subtitle">Created By</h2>
-                            <span>
-                                <img style="width: 24px; height: 24px;" src="./assets/tag.png" alt="avatar">
-                                <p class="poster__name">Orbitian</p>
-                            </span>
-                        </div>
-                        <div>
-                            <h2 class="poster__subtitle">Description</h2>
-                            <p class="poster__paragraf">The Orbitians
-                                is a collection of 10,000 unique NFTs on the Ethereum blockchain,</p>
+                            <div class="poster__text">
+                                <h2 class="poster__title">
 
-                            <p class="poster__paragraf">There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians.</p>
-
-                            <p class="poster__paragraf">They live in a metal space machines, high up in the sky and only have one foot on Earth.
-                                These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.</p>
-
-                            <h2 class="poster__subtitle">Details</h2>
-
-                            <div class="poster__planet">
-                                <img src="./assets/Globe.png" alt="planet">
-                                <p>View on Etherscan</p>
+                                    The Orbitians
+                                </h2>
+                                <p class="poster__date">Minted on Sep 30, 2022</p>
                             </div>
-                            <div class="poster__planet">
-                                <img src="./assets/Globe.png" alt="planet">
-                                <p>View Original</p>
+                            <div class="poster__avtor">
+                                <h2 class="poster__subtitle">Created By</h2>
+                                <span>
+                                    <img style="width: 24px; height: 24px;" src="./assets/tag.png" alt="avatar">
+                                    <p class="poster__name">Orbitian</p>
+                                </span>
                             </div>
-                            <h2 class="poster__subtitle">Tag</h2>
-                            <div class="poster__tags">
-                                <span class="poster__tag">Animation</span>
-                                <span class="poster__tag">illustration</span>
-                                <span class="poster__tag">Moon</span>
-                                <span class="poster__tag">Moon</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="poster__clock">
-                        <h5>Auction ends in:</h5>
-                        <div id="countdown">
                             <div>
-                                <span class="countdown__time" id="hours">00</span>
-                                <span class="countdown__title">Hours</span>
-                            </div>
-                            <span class="countdown__dot">:</span>
-                            <div>
-                                <span class="countdown__time" id="minutes">00</span>
-                                <span class="countdown__title">Minutes</span>
-                            </div>
-                            <span class="countdown__dot">:</span>
-                            <div>
-                                <span class="countdown__time" id="seconds">00</span>
-                                <span class="countdown__title">Seconds</span>
+                                <h2 class="poster__subtitle">Description</h2>
+                                <p class="poster__paragraf">The Orbitians
+                                    is a collection of 10,000 unique NFTs on the Ethereum blockchain,</p>
+
+                                <p class="poster__paragraf">There are all sorts of beings in the NFT Universe. The most
+                                    advanced and friendly of the bunch are Orbitians.</p>
+
+                                <p class="poster__paragraf">They live in a metal space machines, high up in the sky and
+                                    only have one foot on Earth.
+                                    These Orbitians are a peaceful race, but they have been at war with a group of
+                                    invaders for many generations. The invaders are called Upside-Downs, because of
+                                    their inverted bodies that live on the ground, yet do not know any other way to be.
+                                    Upside-Downs believe that they will be able to win this war if they could only get
+                                    an eye into Orbitian territory, so they've taken to make human beings their target.
+                                </p>
+
+                                <h2 class="poster__subtitle">Details</h2>
+
+                                <div class="poster__planet">
+                                    <img src="./assets/Globe.png" alt="planet">
+                                    <p>View on Etherscan</p>
+                                </div>
+                                <div class="poster__planet">
+                                    <img src="./assets/Globe.png" alt="planet">
+                                    <p>View Original</p>
+                                </div>
+                                <h2 class="poster__subtitle">Tag</h2>
+                                <div class="poster__tags">
+                                    <span class="poster__tag">Animation</span>
+                                    <span class="poster__tag">illustration</span>
+                                    <span class="poster__tag">Moon</span>
+                                    <span class="poster__tag">Moon</span>
+                                </div>
                             </div>
                         </div>
-                        <a href="#" class="clock__cta">
-                            Place Bid
-                        </a>
-                    </div>
+                        <div class="poster__clock">
+                            <h5>Auction ends in:</h5>
+                            <div id="countdown">
+                                <div>
+                                    <span class="countdown__time" id="hours">00</span>
+                                    <span class="countdown__title">Hours</span>
+                                </div>
+                                <span class="countdown__dot">:</span>
+                                <div>
+                                    <span class="countdown__time" id="minutes">00</span>
+                                    <span class="countdown__title">Minutes</span>
+                                </div>
+                                <span class="countdown__dot">:</span>
+                                <div>
+                                    <span class="countdown__time" id="seconds">00</span>
+                                    <span class="countdown__title">Seconds</span>
+                                </div>
+                            </div>
+                            <a href="#" class="clock__cta">
+                                Place Bid
+                            </a>
+                        </div>
                     </article>
 
                     <article class="more">
@@ -125,7 +135,7 @@
                             <h3 class="more__title">More from this artist</h3>
                             <a href="#" class="more__cta">
                                 <img src="./assets/ArrowRight.png" alt="arrow">
-                               <p>Go To Artist Page</p> 
+                                <p>Go To Artist Page</p>
                             </a>
                         </div>
 
@@ -137,9 +147,9 @@
                 </div>
 
             </section>
-            
-          </main>
-          <footer class="footer">
+
+        </main>
+        <footer class="footer">
             <div class="footer__container">
                 <div class="footer__wrapper">
                     <ul class="footer__list">
@@ -176,7 +186,7 @@
                     <ul class="footer__list">
                         <l1 class="footer__title">Join our weekly digest</l1>
                         <p class="footer__description">Get exclusive promotions & updates straight to your inbox.</p>
-                        <form class="footer__form" >
+                        <form class="footer__form">
                             <input type="email" id="sEmail" placeholder="Enter your email here" required>
                             <button class="footer__button" type="submit" id="subscribe">Subscribe</button>
                         </form>
@@ -190,4 +200,5 @@
     <script src="./scripts/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
+
 </html>
