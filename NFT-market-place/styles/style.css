@@ -207,7 +207,8 @@ display: none;
 }
 
 .gallery-card-img{
-    width: 330px;
+    max-width: 330px;
+    width: 100%;
     height: 330px;
 }
 
@@ -1171,10 +1172,10 @@ justify-content: flex-start
     .categories__cards {
         justify-content: center;
     } 
-    .categories__card{
+    /* .categories__card{
         max-width: 150px;
 
-    }
+    } */
     .categories__card img{
         border-radius: 20px 20px 0 0;
     }
@@ -1221,10 +1222,10 @@ justify-content: flex-start
     }
 
     /* creator */
-    .categories__card{
+    /* .categories__card{
         max-width: 130px;
 
-    }
+    } */
 
         /* trend */
         .discover__card:nth-child(2) {
