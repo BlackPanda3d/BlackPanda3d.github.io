@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/loader.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/nft_page.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icon/logo.png">
+    <script type="module" src="./scripts/subscribe.js"></script>
+    <script defer type="module" src="./scripts/firebaseauth.js"></script>
+    <title>NFT MArketPlace</title>
+</head>
+<body>
+    <div id="preloader" class="preloader">
+        <span class="loader"></span>
+      </div>
+    <div class="wrap">
+
+          <header class="header">
+            <div class="header__container">
+              <a href="index.html" class="header__logo">
+                <img src="./assets/icon/logo.png" alt="">
+                <h1 class="header__logo-text">NFT Marketplace</h1>
+              </a>
+              <nav class="navbar">
+                <ul class="navbar__items">
+                  <li id="item"><a href="./marketplace.html" key="firstItemNav" class="lang">Marketplace</a></li>
+                  <li id="item"><a href="#" key="secondItemNav" class="lang">Rankings</a></li>
+                  <li id="item" ><a href="./wallet.html" key="thirdItemNav" class="lang" >Connect a wallet</a></li>
+                </ul>
+                <a href="#" class="header__button_signup" key="join" id="signUpButton">
+                    <img src="./assets/icon/User.png" alt="user">
+                    Sign Up
+                </a>
+
+                <a href="#" class="header__button_signin" id="signInButton" style="display:none;">
+                    <img src="./assets/icon/User.png" alt="user">
+                    Sign in
+                </a>
+              </nav>
+              <button class="burger__button">
+                <span class="burger-icon"></span>
+              </button>
+          
+            </div>
+          </header>
+        <main class="page">
+            <section class="login">
+                <div class="login__container">
+                    <div class="login__img">
+                        <img src="./assets/media/hero-img.jpg" alt="image">
+                    </div>
+                    <div class="login__signup" id="signup">
+                        <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+                        <div class="login__wrapper">
+                            <h2 class="login__title">Create account</h2>
+                            <p class="login__description">Welcome! enter your details and start creating, collecting and selling NFTs.</p>
+                        </div>
+                        
+                        <form class="login__form">
+                            <div class="input-block">
+                                <img src="./assets/icon/User.png" alt="user">
+                                <input id="fName" type="text" placeholder="Usernanme" required>
+                            </div>
+                            <div class="input-block">
+                                <img src="./assets/icon/envelope.png" alt="user">
+                                <input type="email" id="rEmail" placeholder="Email Address" required>
+                            </div>
+                            <div class="input-block">
+                                <img src="./assets/icon/LockKey.png" alt="user">
+                                <input type="text" id="rPassword" placeholder="Password" required>
+                            </div>
+                            <button  id="submitSignUp" class="login__submit">Create account</иutton>
+                        </form>
+                    </div>
+                    <div class="login__signin" id="signIn">
+                        <div class="login__wrapper">
+                            <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+                            <h2 class="login__title">Sign In</h2>
+                            <p class="login__description">Welcome Back !!!</p>
+                        </div>
+                        
+                        <form  class="login__form">
+                            <div class="input-block">
+                                <img src="./assets/icon/envelope.png" alt="user">
+                                <input type="email" id="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="input-block">
+                                <img src="./assets/icon/LockKey.png" alt="user">
+                                <input type="text" id="password" placeholder="Password" required>
+                            </div>
+                            <button  id="submitSignIn" class="login__submit">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <ul class="footer__list">
+                        <a href="#" class="footer__logo">
+                            <img src="./assets/icon/logo.png" alt="">
+                            <h1 class="footer__logo-text">NFT Marketplace</h1>
+                        </a>
+                        <li>
+                            NFT marketplace UI created <br>
+                            with Anima for Figma.
+                        </li>
+                        <li>Join our community</li>
+                        <li class="footer__social">
+                            <a href="#">
+                                <img src="./assets/icon/DiscordLogo.png" alt="discord">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/icon/InstagramLogo.png" alt="instagram">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/icon/TwitterLogo.png" alt="Twitter">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/icon/YoutubeLogo.png" alt="Youtube">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <l1 class="footer__title">Explore</l1>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Rankings</a></li>
+                        <li><a href="#">Connect a wallet</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <l1 class="footer__title">Join our weekly digest</l1>
+                        <p class="footer__description">Get exclusive promotions & updates straight to your inbox.</p>
+                        <form class="footer__form" >
+                            <input type="email" id="sEmail" placeholder="Enter your email here" required>
+                            <button class="footer__button" type="submit" id="subscribe">Subscribe</button>
+                        </form>
+                    </ul>
+                </div>
+                <p class="footer__sub-text">Ⓒ NFT Market. Use this template freely.</p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="./scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>

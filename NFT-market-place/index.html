@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/loader.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icon/logo.png">
+    <script type="module" src="./scripts/subscribe.js"></script>
+    <script type="module" src="./scripts/sapceManSubscribe.js"></script>
+    <title>NFT MArketPlace</title>
+</head>
+
+<body>
+    <div id="preloader" class="preloader">
+        <span class="loader"></span>
+    </div>
+    <div class="wrap">
+
+        <header class="header">
+            <div class="header__container">
+                <a href="index.html" class="header__logo">
+                    <img src="./assets/icon/logo.png" alt="">
+                    <h1 class="header__logo-text">NFT Marketplace</h1>
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar__items">
+                        <li id="item"><a href="./marketplace.html" key="firstItemNav" class="lang">Marketplace</a></li>
+                        <li id="item"><a href="./404.html" key="secondItemNav" class="lang">Rankings</a></li>
+                        <li id="item"><a href="./wallet.html" key="thirdItemNav" class="lang">Connect a wallet</a></li>
+                    </ul>
+                    <a href="./login.html" class="header__button_signup" key="join" id="signUpButton">
+                        <img src="./assets/icon/User.png" alt="user">
+                        Sign Up
+                    </a>
+
+                    <a href="./login.html" class="header__button_signin" id="signInButton" style="display:none;">
+                        <img src="./assets/icon/User.png" alt="user">
+                        Sign in
+                    </a>
+                </nav>
+                <button class="burger__button">
+                    <span class="burger-icon"></span>
+                </button>
+
+            </div>
+        </header>
+        <main class="page">
+            <section class="promo">
+                <div class="promo__container">
+                    <div class="promo__description">
+                        <h1>Discover digital art & Collect NFTs</h1>
+                        <p class="promo__description-text">NFT marketplace UI created with Anima for Figma. Collect, buy
+                            and sell art from more than 20k NFT artists.</p>
+                        <a href="./login.html" class="promo__cta">
+                            <img src="./assets/icon/white-rocket.png" alt="rocket">
+                            <p class="promo__cta-title"> Get Started</p>
+                        </a>
+                        <div class="stat">
+                            <div class="stat__item">
+                                <h4 class="stat__number">240+</h4>
+                                <p class="stat__subtitle">Total Sale</p>
+                            </div>
+                            <div class="stat__item">
+                                <h4 class="stat__number">100k+</h4>
+                                <p class="stat__subtitle">Auctions</p>
+                            </div>
+                            <div class="stat__item">
+                                <h4 class="stat__number">240+</h4>
+                                <p class="stat__subtitle">Artists</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card-item">
+                            <div class="card__img">
+                                <img src="./assets/media/card.png" alt="img">
+                            </div>
+                            <div class="card__description">
+                                <h5 class="card__title">Space Walking</h5>
+                                <span class="card__info">
+                                    <div class="card__avatar">
+                                        <img src="./assets/media/avatar.png" alt="">
+                                    </div>
+                                    <h6>Animakid</h6>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./login.html" class="promo__cta_mob">
+                        <img src="./assets/icon/white-rocket.png" alt="rocket">
+                        <p class="promo__cta-title"> Get Started</p>
+                    </a>
+                    <div class="stat_mob">
+                        <div class="stat__item">
+                            <h4 class="stat__number">240+</h4>
+                            <p class="stat__subtitle">Total Sale</p>
+                        </div>
+                        <div class="stat__item">
+                            <h4 class="stat__number">100k+</h4>
+                            <p class="stat__subtitle">Auctions</p>
+                        </div>
+                        <div class="stat__item">
+                            <h4 class="stat__number">240+</h4>
+                            <p class="stat__subtitle">Artists</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="trend">
+                <div class="trend__container">
+                    <h3 class="trend__title">Trending Collection</h3>
+                    <h4 class="trend__subtitle">Checkout our weekly updated trending collection.</h4>
+                    <div class="trend__gallery">
+                        <div class="gallery-card">
+                            <div class="gallery-card-img">
+                                <img src="./assets/trend/dog.png" alt="nft-dog">
+                            </div>
+                            <div class="gallery-cards">
+                                <div class="gallery-cards-item">
+                                    <img src="./assets/trend/cat.png" alt="cat-nft">
+                                </div>
+                                <div class="gallery-cards-item">
+                                    <img src="./assets/trend/bear.png" alt="bear-nft">
+                                </div>
+                                <div class="gallery-cards-number">
+                                    <span class="gallery-counter">1025+</span>
+                                </div>
+                            </div>
+                            <div class="gallery-description">
+                                <h5 class="gallery__title">DSGN Animals</h5>
+                                <span class="gallery__info">
+                                    <div class="gallery__avatar">
+                                        <img src="./assets/media/avatar.png" alt="">
+                                    </div>
+                                    <h6>Animakid</h6>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="gallery-card">
+                            <div class="gallery-card-img">
+                                <img src="./assets/trend/mushroom.png" alt="nft-dog">
+                            </div>
+                            <div class="gallery-cards">
+                                <div class="gallery-cards-item">
+                                    <img src="./assets/trend/Secondary-mushrooms.png" alt="cat-nft">
+                                </div>
+                                <div class="gallery-cards-item">
+                                    <img src="./assets/trend/mushrooms-thirds.png" alt="bear-nft">
+                                </div>
+                                <div class="gallery-cards-number">
+                                    <span class="gallery-counter">1025+</span>
+                                </div>
+                            </div>
+                            <div class="gallery-description">
+                                <h5 class="gallery__title">DSGN Animals</h5>
+                                <span class="gallery__info">
+                                    <div class="gallery__avatar">
+                                        <img src="./assets/media/avatar.png" alt="">
+                                    </div>
+                                    <h6>Animakid</h6>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="gallery-card-img">
+                                <img src="./assets/trend/space-man-first.png" alt="nft-dog">
+                            </div>
+                            <div class="gallery-cards">
+                                <div class="gallery-cards-item">
+                                    <img src="./assets/trend/space-man-second.png" alt="cat-nft">
+                                </div>
+                                <div class="gallery-cards-item">
+                                    <img src="./assets/trend/space-man-third.png" alt="bear-nft">
+                                </div>
+                                <div class="gallery-cards-number">
+                                    <span class="gallery-counter">1025+</span>
+                                </div>
+                            </div>
+                            <div class="gallery-description">
+                                <h5 class="gallery__title">DSGN Animals</h5>
+                                <span class="gallery__info">
+                                    <div class="gallery__avatar">
+                                        <img src="./assets/media/avatar.png" alt="">
+                                    </div>
+                                    <h6>Animakid</h6>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="creators">
+                <div class="creators__container">
+                    <div class="creators__wrapper">
+                        <span>
+                            <h2 class="creators__title">Top creators</h2>
+                            <p class="creators__text">Checkout Top Rated Creators on the NFT Marketplace</p>
+                        </span>
+
+                        <a href="./login.html" class="creators__cta">
+                            <img src="./assets/icon/RocketLaunch.png" alt="#">
+                            <p>View Rankings</p>
+                        </a>
+                    </div>
+                    <div class="creators__avtor"></div>
+                    <a href="./login.html" class="creators__cta_mob">
+                        <img src="./assets/icon/RocketLaunch.png" alt="#">
+                        <p>View Rankings</p>
+                    </a>
+                </div>
+
+            </section>
+            <section class="categories">
+                <div class="categories__container">
+                    <h2 class="categories__title">
+                        Browse Categories
+                    </h2>
+                    <div class="categories__cards">
+
+                    </div>
+                </div>
+            </section>
+            <section class="discover">
+                <div class="discover__container">
+                    <div class="discover__wrapper">
+                        <span>
+                            <h3 class="discover__title">Trending Collection</h3>
+                            <h4 class="discover__subtitle">Checkout our weekly updated trending collection.</h4>
+                        </span>
+                        <a href="./login.html" class="discover__cta">
+                             <img src="./assets/purple-Eye.png" alt="img">
+                             <p>See all</p>
+                        </a>
+                    </div>
+                  
+                    <div class="discover__cards">
+
+                    </div>
+                </div>
+            </section>
+            <section class="mashrooms">
+                <div class="mashrooms__container">
+                    <div class="mashrooms__bg">
+                        <img src="./assets/bg.png" alt="mashrooms">
+                    </div>
+                    <div class="mashrooms__panel">
+                        <span class="mashrooms__tag">
+                            <img src="./assets/tag.png" alt="img">
+                            <p>Shroomie</p>
+                        </span>
+                        <div class="mashrooms__timer">
+                            <span>
+                                <h2 class="mashrooms__title">
+                                    Magic Mashrooms
+                                </h2>
+                                    <a href="./login.html" class="mashrooms__cta">
+                                        <img src="./assets/purple-Eye.png" alt="eye">
+                                        See NFT
+                                    </a>
+                            </span>
+                            <div class="mashrooms__clock">
+                                <h5>Auction ends in:</h5>
+                                <div id="countdown">
+                                    <div>
+                                        <span class="countdown__time" id="hours">00</span>
+                                        <span class="countdown__title">Hours</span>
+                                    </div>
+                                    <span class="countdown__dot">:</span>
+                                    <div>
+                                        <span class="countdown__time" id="minutes">00</span>
+                                        <span class="countdown__title">Minutes</span>
+                                    </div>
+                                    <span class="countdown__dot">:</span>
+                                    <div>
+                                        <span class="countdown__time" id="seconds">00</span>
+                                        <span class="countdown__title">Seconds</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work">
+                <div class="work__container">
+                        <h3 class="work__title">
+                            How it works
+                        </h3>
+                        <p class="work__subtitle">Find out how to get started</p>
+                    <div class="work__cards">
+                        <div class="work__item-card">
+                            <div class="work__item-img">
+                                <img src="./assets/how-it-work/wallet.png" alt="#">
+                            </div>
+                            <h5 class="work__item-title">
+                                Setup Your wallet
+                            </h5>
+                            <p class="work__item-description">
+                                Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.
+                            </p>
+                        </div>
+                        <div class="work__item-card">
+                            <div class="work__item-img">
+                                <img src="./assets/how-it-work/folder.png" alt="#">
+                            </div>
+                            <h5 class="work__item-title">
+                                Create Collection
+                            </h5>
+                            <p class="work__item-description">
+                                Upload your work and setup your collection. Add a description, social links and floor price.
+                            </p>
+                        </div>
+                        <div class="work__item-card">
+                            <div class="work__item-img">
+                                <img src="./assets/how-it-work/Icon.png" alt="#">
+                            </div>
+                            <h5 class="work__item-title">
+                                Start Earning
+                            </h5>
+                            <p class="work__item-description">
+                                Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="space-man">
+                <div class="space-man__container">
+
+                    <div class="space-man__block">
+                        <div class="space-man__img">
+                            <img src="./assets/space-man.png" alt="space-man">
+                        </div>
+
+                        <div class="space-man__subscribe">
+                            <h2 class="space-man__title">Join our weekly <br>digest</h2>
+                            <p class="space-man__text">Get exclusive promotions & updates straight to your inbox.</p>
+                            <form class="space-man__form">
+                                <input type="email" id="spEmail" placeholder="Enter your email here" required>
+                                <button class="space-man__button" type="submit" id="subscribeSecond"><img src="./assets/EnvelopeSimple.png" alt="">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <ul class="footer__list">
+                        <a href="#" class="footer__logo">
+                            <img src="./assets/icon/logo.png" alt="">
+                            <h1 class="footer__logo-text">NFT Marketplace</h1>
+                        </a>
+                        <li>
+                            NFT marketplace UI created <br>
+                            with Anima for Figma.
+                        </li>
+                        <li>Join our community</li>
+                        <li class="footer__social">
+                            <a href="#">
+                                <img src="./assets/icon/DiscordLogo.png" alt="discord">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/icon/InstagramLogo.png" alt="instagram">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/icon/TwitterLogo.png" alt="Twitter">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/icon/YoutubeLogo.png" alt="Youtube">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <l1 class="footer__title">Explore</l1>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Rankings</a></li>
+                        <li><a href="#">Connect a wallet</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <h2 class="footer__title">Join our weekly digest</h2>
+                        <p class="footer__description">Get exclusive promotions & updates straight to your inbox.</p>
+                        <form class="footer__form">
+                            <input type="email" id="sEmail" placeholder="Enter your email here" required>
+                            <button class="footer__button" type="submit" id="subscribe">Subscribe</button>
+                        </form>
+                    </ul>
+                </div>
+                <p class="footer__sub-text">Ⓒ NFT Market. Use this template freely.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./scripts/mocDb.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>
