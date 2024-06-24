@@ -3,9 +3,9 @@
 :root {
     --background-color: #2B2B2B;
     --color-white: #FFFFFF;
-    --violet:#A259FF;
-    --color-gray:#CCCCCC;
-  }
+    --violet: #A259FF;
+    --color-gray: #CCCCCC;
+}
 
 *,
 *::before,
@@ -29,7 +29,7 @@ body {
 
     background-repeat: no-repeat;
     object-fit: cover;
-    color: var(--color-white);    
+    color: var(--color-white);
     font-family: "Work Sans", sans-serif;
     animation: gradient 4s ease infinite;
     font-size: 14px;

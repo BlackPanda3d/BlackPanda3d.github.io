@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.wallet{
+.wallet {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.wallet__container{
+.wallet__container {
     max-width: 1400px;
     width: 100%;
 
@@ -15,17 +15,18 @@
 
 /* left side */
 
-.wallet__img{
+.wallet__img {
     width: 50%;
     position: relative;
     overflow: hidden;
 }
-.wallet__img img{
+
+.wallet__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
 
 }
 
@@ -36,20 +37,20 @@
 
 
 
-.wallet__wrapper{
+.wallet__wrapper {
     max-width: 460px;
     width: 100%;
 
 }
 
-.wallet__title{
+.wallet__title {
     font-size: 45px;
     font-weight: 600;
     font-family: "Work Sans", sans-serif;
     color: white;
 }
 
-.wallet__description{
+.wallet__description {
     font-size: 51px;
     font-weight: 600;
     font-family: "Work Sans", sans-serif;
@@ -59,7 +60,7 @@
 }
 
 
-.wallet__box{
+.wallet__box {
     max-width: 570px;
     width: 100%;
     display: flex;
@@ -69,14 +70,15 @@
 
 }
 
-.wallet__items{
+.wallet__items {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 
 }
-.wallet-item{
+
+.wallet-item {
     max-width: 320px;
     width: 100%;
     border: 1px solid purple;
@@ -92,55 +94,62 @@
 
 
 
-@media(max-width: 700px){
-    .wallet__title{
+@media(max-width: 700px) {
+    .wallet__title {
         font-size: 40px;
     }
-    .wallet__description{
+
+    .wallet__description {
         font-size: 18px;
     }
-    .wallet__box{
+
+    .wallet__box {
         padding: 30px;
     }
- 
+
 }
 
 
-@media(max-width: 864px){
+@media(max-width: 864px) {
 
-    .wallet__box{
+    .wallet__box {
         max-width: 100%;
         align-items: center
     }
-    .wallet__items{
+
+    .wallet__items {
         max-width: 100%;
-    }  
+    }
 }
 
 
 
 
-@media( max-width: 900px){
-    .wallet__container{
+@media(max-width: 900px) {
+    .wallet__container {
         flex-direction: column;
     }
 
-    .wallet__img{
+    .wallet__img {
         width: 100%;
         height: 420px;
-    } 
-    .wallet__img img{
+    }
+
+    .wallet__img img {
         object-fit: cover;
     }
-    .wallet__box{
+
+    .wallet__box {
         align-items: center;
     }
-    .wallet__description{
+
+    .wallet__description {
         text-align: center;
     }
-    .wallet__title{
+
+    .wallet__title {
         text-align: center;
-    } 
+    }
 
 
 }

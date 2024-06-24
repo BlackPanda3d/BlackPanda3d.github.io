@@ -1,12 +1,12 @@
-.homepage{
- 
+.homepage {
+
     background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.homepage__container{
+.homepage__container {
     max-width: 1400px;
     padding: 34px 50px 34px 50px;
     width: 100%;
@@ -15,21 +15,21 @@
     flex-direction: column;
 }
 
-.homepage__promo{
+.homepage__promo {
     width: 100%;
     height: 370px;
     position: relative;
 }
 
-.homepage__promo img{
+.homepage__promo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
 }
 
-.homepage__avatar{
+.homepage__avatar {
     width: 120px;
     height: 120px;
     position: absolute;
@@ -37,27 +37,27 @@
     left: 115px;
 }
 
-.homepage__description{
+.homepage__description {
     width: 100%;
     padding: 30px 120px;
     margin-top: 60px;
 
 }
 
-.homepage__wrapper{
+.homepage__wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.homepage__name{
+.homepage__name {
     font-size: 61px;
     font-weight: 600;
 
 }
 
-.homepage__stat{
+.homepage__stat {
     max-width: 510px;
     width: 100%;
     display: flex;
@@ -65,58 +65,59 @@
     gap: 50px;
 }
 
-.parameter__number{
+.parameter__number {
     font-size: 28px;
     font-weight: 700;
 }
 
-.parameter__title{
+.parameter__title {
     font-size: 22px;
     font-weight: 400;
 }
 
-.bio{
+.bio {
     margin-top: 30px;
 }
 
-.bio h4{
+.bio h4 {
     color: gray;
     font-size: 22px;
 }
 
-.bio p{
-   margin-top: 10px; 
-   font-size: 22px;
-   font-weight: 700;
+.bio p {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 
-.link{
+.link {
     margin-top: 30px;
 }
 
-.link h4{
+.link h4 {
     color: gray;
     font-size: 22px;
 }
 
-.link p{
-   margin-top: 10px; 
-   font-size: 22px;
-   font-weight: 700;
+.link p {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 700;
 }
 
-.link ul{
+.link ul {
     margin-top: 20px;
 }
-.cta{
+
+.cta {
 
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.cta__copy{
+.cta__copy {
 
     padding: 19px 32px;
     outline: none;
@@ -132,10 +133,10 @@
     cursor: pointer;
 }
 
-.cta__follow{
+.cta__follow {
     padding: 19px 32px;
     outline: none;
-    border:1px solid #A259FF;
+    border: 1px solid #A259FF;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -143,33 +144,34 @@
     gap: 10px;
     font-size: 13px;
     font-weight: 700;
-    color: white; 
+    color: white;
     cursor: pointer;
 }
-.plus{
+
+.plus {
     font-size: 20px;
     font-weight: 600;
 }
 
-.sub-navigation{
+.sub-navigation {
     width: 100%;
     border-top: 2px solid rgba(128, 128, 128, 0.377);
     padding: 30px;
 }
 
-.sub-navigation ul{
+.sub-navigation ul {
     margin-top: 15px;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.sub-navigation__item{
+.sub-navigation__item {
     font-size: 22px;
     font-weight: 600;
 }
 
-.sub-navigation__number{
+.sub-navigation__number {
     font-size: 20px;
     height: 22px;
     max-width: 30px;
@@ -179,13 +181,13 @@
     border-radius: 50%;
 }
 
-.sub-navigation{
+.sub-navigation {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.gallery{
+.gallery {
     width: 100%;
     padding: 80px 10px;
     background-color: #3B3B3B;
@@ -196,54 +198,59 @@
 
 
 
-@media(max-width: 1000px){
+@media(max-width: 1000px) {
     .homepage__avatar {
         left: 20px;
     }
-    .homepage__description{
+
+    .homepage__description {
         padding: 20px 20px;
-    } 
+    }
 }
 
 
-@media(max-width: 730px){
+@media(max-width: 730px) {
     .homepage__wrapper {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
-    .homepage__stat{
+
+    .homepage__stat {
         margin-top: 50px;
     }
-    .homepage__container{
+
+    .homepage__container {
         padding: 10px 10px;
-    } 
+    }
 }
 
 
-@media(max-width: 552px){
+@media(max-width: 552px) {
     .parameter__number {
         font-size: 20px;
     }
-    .parameter__title{
+
+    .parameter__title {
         font-size: 15px;
     }
-    .bio p{
+
+    .bio p {
         font-size: 16px;
-    }  
+    }
 }
 
 
-@media(max-width: 400px){
-    .homepage__stat{
+@media(max-width: 400px) {
+    .homepage__stat {
         gap: 20px;
     }
-    .cta__copy{
+
+    .cta__copy {
         padding: 15px 20px;
     }
-    .cta__follow{
+
+    .cta__follow {
         padding: 15px 20px;
     }
 }
-
-

@@ -1,13 +1,13 @@
-.poster{
+.poster {
     background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: transparent;
     position: relative;
-  }
-  
-  .poster__container {
+}
+
+.poster__container {
     max-width: 1400px;
     width: 100%;
     display: flex;
@@ -15,23 +15,23 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 0px 50px;
-  }
-
-.poster__img{
-    width: 100%;
-    height: 560px;
-    
 }
 
-.poster__img img{
+.poster__img {
+    width: 100%;
+    height: 560px;
+
+}
+
+.poster__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
 }
 
-.poster__exposition{
+.poster__exposition {
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -39,13 +39,13 @@
     margin-top: 30px;
 }
 
-.poster__description{
+.poster__description {
     max-width: 605px;
     width: 100%;
     margin-top: 20px;
 }
 
-.poster__avtor span{
+.poster__avtor span {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -53,36 +53,36 @@
 
 }
 
-.poster__title{
+.poster__title {
     font-size: 51px;
 }
 
-.poster__date{
+.poster__date {
     color: #858584;
 }
 
-.poster__subtitle{
+.poster__subtitle {
     margin-top: 30px;
     color: #858584;
     font-size: 15px;
 }
 
-.poster__paragraf{
+.poster__paragraf {
     margin-top: 20px;
 }
 
-.poster__planet{
+.poster__planet {
     display: block;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.poster__tags{
+.poster__tags {
     margin-top: 20px;
 }
 
-.poster__tag{
+.poster__tag {
     background-color: #858584;
     color: black;
     padding: 4px;
@@ -91,17 +91,17 @@
 
 
 
-.poster__clock{
+.poster__clock {
     max-width: 295px;
     width: 100%;
     min-height: 237px;
     padding: 30px;
     color: white;
 
-    background: rgba( 27, 25, 25, 0.7 );
+    background: rgba(27, 25, 25, 0.7);
 
-    backdrop-filter: blur( 13px );
-    -webkit-backdrop-filter: blur( 13px );
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
     border-radius: 10px;
 
 }
@@ -126,21 +126,21 @@
     margin: 0 5px;
 }
 
-.countdown__title{
+.countdown__title {
     font-size: 12px;
     font-weight: 400;
     text-align: center;
 }
 
-.countdown__time{
+.countdown__time {
     font-size: 38px;
 }
 
-.countdown__dot{
+.countdown__dot {
     margin-top: 10px;
 }
 
-.clock__cta{
+.clock__cta {
     display: block;
     margin-top: 20px;
     max-width: 235px;
@@ -153,12 +153,12 @@
 
 /* more */
 
-.more{
+.more {
     width: 100%;
     padding: 0 100px;
 }
 
-.more__header{
+.more__header {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -167,12 +167,13 @@
 
 }
 
-.more__title{
+.more__title {
     font-size: 38px;
     color: white;
 
 }
-.more__cta{
+
+.more__cta {
     display: flex;
     border: 2px solid blueviolet;
     padding: 20px;
@@ -181,10 +182,10 @@
 }
 
 
-.more__card{
+.more__card {
     max-width: 330px;
     width: 100%;
-    min-height: 469px;
+    /* min-height: 469px; */
     background-color: #3B3B3B;
     border-radius: 20px;
     transition: transform 0.3s ease;
@@ -194,63 +195,96 @@
 .more__card:hover {
     transform: scale(1.05);
 }
-.more__cards{
+
+.more__cards {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
 }
 
-.more__img{
-    max-width: 100%;
-    height: 296px;
+.more__img {
+    max-width: 330px;
+    width: 100%;
+
 }
 
-.more-stat{
+.more__img img{
+    max-width: 100%;
+
+}
+
+.more-stat {
     padding: 20px 30px;
 }
-.more-stat__title{
+
+.more-stat__title {
     font-size: 22px;
 }
 
-.more-stat__info{
-display: flex;
-align-items: center;
-gap: 12px;
+.more-stat__info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 
 }
 
-.more-stat__info h6{
+.more-stat__info h6 {
     font-size: 16px;
     font-family: 500;
 }
 
-.more-stat__avatar{
+.more-stat__avatar {
     width: 24px;
     height: 24px;
     margin-top: 6px;
-    
+
 }
-.more-stat__avatar img{
+
+.more-stat__avatar img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
 
-.more-stat__price{
+.more-stat__price {
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
 }
 
-.more-stat__price h6{
+.more-stat__price h6 {
     color: #858584;
     font-size: 12px;
 }
 
-.more-stat__price p{
+.more-stat__price p {
     font-size: 16px;
     margin-top: 5px;
-}  
+}
+
+@media(max-width: 1000px) {
+    .more{
+        padding: 10px;
+    }
+
+
+}
+
+
+@media(max-width: 800px) {
+    .poster__exposition{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .poster__container {
+        padding: 10px 15px;
+    }
+    .more__cta{
+        display: none;
+    }
+
+}
